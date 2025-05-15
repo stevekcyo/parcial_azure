@@ -2,81 +2,85 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Examen Parcial - Steve Franks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="tareas/sad samurai champloo GIF.gif" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0a0f1e;
-      --panel: #111827;
-      --card: #1d4ed8;
+      --bg: rgba(10, 15, 30, 0.85);
+      --panel: rgba(17, 24, 39, 0.9);
+      --card: rgba(29, 78, 216, 0.9);
       --accent: #38bdf8;
       --text: #f8fafc;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Orbitron', sans-serif;
-      background-color: var(--bg);
+      background: url("https://media.giphy.com/media/xT1XGEpQwzDEcFgBYY/giphy.gif") no-repeat center center fixed;
+      background-size: cover;
       color: var(--text);
       scroll-behavior: smooth;
     }
-
+    main, header, footer {
+      background-color: var(--bg);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
     header {
-      background: var(--panel);
       padding: 1.2rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 3px 8px rgba(0, 255, 255, 0.2);
       border-bottom: 2px solid var(--accent);
+      box-shadow: 0 3px 8px rgba(0, 255, 255, 0.3);
     }
-
     header h1 {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       color: var(--accent);
     }
-
     nav a {
       color: var(--text);
       margin-left: 1.5rem;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
       transition: color 0.3s, transform 0.3s;
     }
-
     nav a:hover {
       color: var(--accent);
       transform: scale(1.1);
     }
-
     main {
       padding: 2.5rem;
       max-width: 1200px;
       margin: auto;
     }
-
     section {
       margin-bottom: 3.5rem;
+      padding: 1rem 2rem;
+      border-left: 4px solid var(--accent);
+      border-radius: 8px;
     }
-
     section h2 {
       margin-bottom: 1rem;
-      font-size: 2rem;
+      font-size: 2.2rem;
       color: var(--accent);
+      text-shadow: 1px 1px 6px rgba(56, 189, 248, 0.7);
     }
-
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 2rem;
+      margin-top: 1.5rem;
     }
-
     .card {
       background: var(--card);
       padding: 1.8rem;
@@ -86,18 +90,15 @@
       box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
       border: 2px solid #3b82f6;
     }
-
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
     }
-
     .card h3 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       margin-bottom: 1.2rem;
       color: #e0f2fe;
     }
-
     .btn {
       display: inline-block;
       margin: 0.4rem;
@@ -105,44 +106,44 @@
       background-color: var(--accent);
       color: var(--bg);
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
       cursor: pointer;
       text-decoration: none;
+      font-size: 1rem;
       transition: background-color 0.3s;
     }
-
     .btn:hover {
       background-color: #0ea5e9;
     }
-
     footer {
       text-align: center;
       padding: 1.5rem;
-      background: var(--panel);
       color: var(--accent);
       font-weight: bold;
       font-size: 1rem;
-      box-shadow: 0 -2px 8px rgba(0,255,255,0.2);
       border-top: 2px solid var(--accent);
     }
-
     .fade-in {
       opacity: 0;
       transform: translateY(20px);
       transition: all 0.8s ease-out;
     }
-
     .fade-in.visible {
       opacity: 1;
       transform: translateY(0);
     }
-
     summary {
       cursor: pointer;
       font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      text-shadow: 0 0 4px rgba(56, 189, 248, 0.5);
     }
-
+    details {
+      margin-top: 1.5rem;
+    }
   </style>
 </head>
 <body>
@@ -164,53 +165,34 @@
       <h2>Material de Evaluación</h2>
 
       <details>
-        <summary style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--accent);">Secciones de Evaluación</summary>
-        <div class="cards" style="margin-top: 1rem;">
-          <div class="card">
-            <h3>Sección 01</h3>
-            <a href="tareas/secion01.pdf" target="_blank" class="btn">Ver</a>
-            <a href="tareas/secion01.pdf" download class="btn">Descargar</a>
-          </div>
-          <div class="card">
-            <h3>Sección 02</h3>
-            <a href="tareas/secion 02.pdf" target="_blank" class="btn">Ver</a>
-            <a href="tareas/secion 02.pdf" download class="btn">Descargar</a>
-          </div>
-          <div class="card">
-            <h3>Sección 03</h3>
-            <a href="tareas/secion 03.pdf" target="_blank" class="btn">Ver</a>
-            <a href="tareas/secion 03.pdf" download class="btn">Descargar</a>
-          </div>
-          <div class="card">
-            <h3>Sección 04</h3>
-            <a href="tareas/secion 04.pdf" target="_blank" class="btn">Ver</a>
-            <a href="tareas/secion 04.pdf" download class="btn">Descargar</a>
-          </div>
-          <div class="card">
-            <h3>Sección 05</h3>
-            <a href="tareas/secion 05.pdf" target="_blank" class="btn">Ver</a>
-            <a href="tareas/secion 05.pdf" download class="btn">Descargar</a>
-          </div>
-          <div class="card">
-            <h3>Sección 06</h3>
-            <a href="tareas/secion 06.pdf" target="_blank" class="btn">Ver</a>
-            <a href="tareas/secion 06.pdf" download class="btn">Descargar</a>
-          </div>
+        <summary>Secciones de Evaluación</summary>
+        <div class="cards">
+          <div class="card"><h3>Sección 01</h3><a href="tareas/secion01.pdf" target="_blank" class="btn">Ver</a><a href="tareas/secion01.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Sección 02</h3><a href="tareas/secion 02.pdf" target="_blank" class="btn">Ver</a><a href="tareas/secion 02.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Sección 03</h3><a href="tareas/secion 03.pdf" target="_blank" class="btn">Ver</a><a href="tareas/secion 03.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Sección 04</h3><a href="tareas/secion 04.pdf" target="_blank" class="btn">Ver</a><a href="tareas/secion 04.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Sección 05</h3><a href="tareas/secion 05.pdf" target="_blank" class="btn">Ver</a><a href="tareas/secion 05.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Sección 06</h3><a href="tareas/secion 06.pdf" target="_blank" class="btn">Ver</a><a href="tareas/secion 06.pdf" download class="btn">Descargar</a></div>
         </div>
       </details>
 
-      <div class="cards" style="margin-top: 2rem;">
-        <div class="card">
-          <h3>Trabajos de 1 a 4</h3>
-          <a href="tareas/trabajos_1a4.pdf" target="_blank" class="btn">Ver</a>
-          <a href="tareas/trabajos_1a4.pdf" download class="btn">Descargar</a>
+      <details>
+        <summary>Trabajos de 1 a 4</summary>
+        <div class="cards">
+          <div class="card"><h3>Semana 1</h3><a href="tareas/Task 1 Resume (1).pdf" target="_blank" class="btn">Ver</a><a href="tareas/semana1.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Semana 2</h3><a href="tareas/ENNCIADO 01.pdf" target="_blank" class="btn">Ver</a><a href="tareas/semana2.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Semana 3</h3><a href="tareas/TABLES OF EXERCISES (1) (1).xlsx" target="_blank" class="btn">Ver</a><a href="tareas/semana3.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Semana 4</h3><a href="tareas/semana 04.pdf" target="_blank" class="btn">Ver</a><a href="tareas/semana4.pdf" download class="btn">Descargar</a></div>
         </div>
-        <div class="card">
-          <h3>Manuales</h3>
-          <a href="tareas/manuales.pdf" target="_blank" class="btn">Ver</a>
-          <a href="tareas/manuales.pdf" download class="btn">Descargar</a>
+      </details>
+
+      <details>
+        <summary>Manuales</summary>
+        <div class="cards">
+          <div class="card"><h3>Manual de Conexión</h3><a href="tareas/guia de conexion Sql server (1).pdf" target="_blank" class="btn">Ver</a><a href="tareas/manual_conexion.pdf" download class="btn">Descargar</a></div>
+          <div class="card"><h3>Manual Creación Cuenta Azure</h3><a href="tareas/manual de creacion de cuenta microsoft azure (1).pdf" target="_blank" class="btn">Ver</a><a href="tareas/manual_azure.pdf" download class="btn">Descargar</a></div>
         </div>
-      </div>
+      </details>
     </section>
   </main>
 
@@ -226,7 +208,6 @@
         }
       });
     });
-
     document.querySelectorAll('.fade-in').forEach(el => {
       observer.observe(el);
     });
