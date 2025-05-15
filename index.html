@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Examen Parcial - Steve Franks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0f1e;
+      --panel: #111827;
+      --card: #1d4ed8;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: var(--panel);
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 3px 8px rgba(0, 255, 255, 0.2);
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      color: var(--text);
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+      transform: scale(1.1);
+    }
+
+    main {
+      padding: 2.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: var(--accent);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.8rem;
+      border-radius: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
+      border: 2px solid #3b82f6;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.6);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1.2rem;
+      color: #e0f2fe;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 0.4rem;
+      padding: 0.6rem 1.4rem;
+      background-color: var(--accent);
+      color: var(--bg);
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #0ea5e9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--panel);
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 -2px 8px rgba(0,255,255,0.2);
+      border-top: 2px solid var(--accent);
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Examen Parcial</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#parcial">Parcial</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="fade-in">
+      <h2>Bienvenido</h2>
+      <p>Esta es la página de presentación para el examen parcial de base de datos.</p>
+    </section>
+
+    <section id="parcial" class="fade-in">
+      <h2>Secciones de Evaluación</h2>
+      <div class="cards">
+        <!-- Sección 01 a 06 -->
+        <div class="card">
+          <h3>Sección 01</h3>
+          <a href="tareas/secion01.pdf" target="_blank" class="btn">Ver</a>
+          <a href="tareas/secion01.pdf" download class="btn">Descargar</a>
+        </div>
+        <div class="card">
+          <h3>Sección 02</h3>
+          <a href="tareas/secion 02.pdf" target="_blank" class="btn">Ver</a>
+          <a href="tareas/secion 02.pdf" download class="btn">Descargar</a>
+        </div>
+        <div class="card">
+          <h3>Sección 03</h3>
+          <a href="tareas/secion 03.pdf" target="_blank" class="btn">Ver</a>
+          <a href="tareas/secion 03.pdf" download class="btn">Descargar</a>
+        </div>
+        <div class="card">
+          <h3>Sección 04</h3>
+          <a href="tareas/secion 04.pdf" target="_blank" class="btn">Ver</a>
+          <a href="tareas/secion 04.pdf" download class="btn">Descargar</a>
+        </div>
+        <div class="card">
+          <h3>Sección 05</h3>
+          <a href="tareas/secion 05.pdf" target="_blank" class="btn">Ver</a>
+          <a href="tareas/secion 05.pdf" download class="btn">Descargar</a>
+        </div>
+        <div class="card">
+          <h3>Sección 06</h3>
+          <a href="tareas/secion 06.pdf" target="_blank" class="btn">Ver</a>
+          <a href="tareas/secion 06.pdf" download class="btn">Descargar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Steve Franks Barreto Roncal - Examen parcial
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
